@@ -102,10 +102,12 @@ body {
 }
 
 .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
     font-size: 32px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
 }
 
 
