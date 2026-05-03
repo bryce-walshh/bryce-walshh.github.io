@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 body {
-    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font: 400 16px/1.5 "Lora", serif;    
     color: #111;
     background-color: #f4f0e5;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Lora', serif;
 
     min-height: 100vh;
     display: flex;
@@ -10,8 +12,8 @@ body {
 }
 
 .site-header {
-    position: absolute;
-    top: 10vh;
+    position: static;
+    padding-top: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -50,4 +52,70 @@ body {
     justify-content: center;
     gap: 20vh;
     padding: 5vh;
+}
+
+
+.current-favorites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.favorite-album ,
+.favorite-book {
+  width: 250px;
+
+  padding: 16px;
+  border-radius: 8px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #f8f4ed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.favorite-album img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.favorite-book img {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.favorite-heading {
+    width: 100%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+.favorite-album img,
+.favorite-book img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.favorite-album:hover,
+.favorite-book:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
