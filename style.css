@@ -121,3 +121,7 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
+
+.about-image {
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
